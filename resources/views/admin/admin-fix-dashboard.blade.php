@@ -72,37 +72,38 @@
                 <ul class="space-y-4 p-2">
                     <li class="relative group">
                         <a href="#"
-                            class="flex items-center p-3 rounded-r-full text-white hover:bg-gray-100 transition-all duration-300 ease-in-out group">
+                            class="flex items-center p-3 rounded-r-full text-white hover:bg-gray-100 transition-all duration-300 ease-in-out group group-hover:bg-opacity-75 group-hover:backdrop-blur-sm">
                             <i class="bi bi-house-door text-2xl transition-transform duration-300"></i>
                             <span
-                                class="ml-6 md:hidden text-xl text-white transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 ">Beranda</span>
+                                class="ml-6 md:hidden text-white transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-25">Beranda</span>
                             <div
-                                class="absolute inset-y-0 left-0 w-1 bg-transparent transition-all duration-300">
+                                class="absolute inset-y-0 left-0 w-1 bg-transparent transition-all duration-300 group-hover:bg-blue-500">
                             </div>
                             <!-- White Overlay on Hover -->
                             <div
-                                class="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-20 rounded-r-full transition-opacity duration-300 ease-in-out">
+                                class="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-25 rounded-r-full transition-opacity duration-300 ease-in-out">
                             </div>
                         </a>
                     </li>
                     <li class="relative group">
                         <a href="#"
-                            class="flex items-center p-3 rounded-r-full text-white hover:bg-gray-100 transition-all duration-300 ease-in-out group">
+                            class="flex items-center justify-center p-4 text-gray-900 rounded-full dark:text-white hover:bg-gray-200 transition-all duration-300 ease-in-out group group-hover:bg-opacity-75 group-hover:backdrop-blur-sm">
                             <i class="bi bi-calendar text-2xl transition-transform duration-300 ease-in-out"></i>
                             <span
-                                class="ml-6 md:hidden text-xl text-white transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100">Tugas</span>
+                                class="ml-6 md:hidden text-white transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100">Tugas</span>
                             <div
-                                class="absolute inset-y-0 left-0 w-1 bg-transparent transition-all duration-300">
+                                class="absolute inset-y-0 left-0 w-1 bg-transparent transition-all duration-300 group-hover:bg-blue-500">
                             </div>
                             <!-- White Overlay on Hover -->
                             <div
-                                class="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-20 rounded-r-full transition-opacity duration-300 ease-in-out">
+                                class="absolute inset-0 w-full h-full bg-white opacity-25 group-hover:opacity-20 rounded-r-full transition-opacity duration-300 ease-in-out">
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
         </aside>
+
 
 
         <!-- Overlay for Mobile -->
@@ -112,9 +113,7 @@
 
         <!-- Content -->
         <div id="content-area" class="flex-1 p-8 transition-all duration-300 ease-in-out pt-20 md:ml-20">
-            <div class="grid gap-4 grid-rows-6 md:grid-cols-2 lg:grid-cols-5">
-                <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
-                </div>
+            <div class="grid gap-4 grid-rows-6 md:grid-cols-2 lg:grid-cols-6">
                 <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
                 </div>
                 <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
@@ -128,10 +127,12 @@
                 <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
                 </div>
             </div>
+
+            <!-- Lengkungan Biru di Bawah Kanan -->
+            <div class="relative">
+                <div class="absolute right-0 bottom-0 w-64 h-64 bg-blue-700 rounded-tl-full"></div>
+            </div>
         </div>
-        {{-- <div class="relative">
-            <div class="absolute right-0 bottom-0 w-80 h-64 bg-blue-700 rounded-tl-full"></div>
-        </div> --}}
 
     </main>
 

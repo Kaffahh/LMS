@@ -12,7 +12,18 @@ class HomeController extends Controller
         $user = Auth::User();
 
         if ($user->status == 'Ad') {
-            return view('admin.admin-new');
+            return view('admin.admin');
+        }
+
+        return view('welcome');
+    }
+
+    public function guru()
+    {
+        $user = Auth::User();
+
+        if ($user->status == 'Ad') {
+            return view('admin.teacher.dashboard-tc');
         }
 
         return view('welcome');

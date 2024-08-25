@@ -110,28 +110,7 @@
             class="fixed inset-0 bg-black opacity-50 hidden z-30 md:hidden transition-opacity duration-300 ease-in-out">
         </div>
 
-        <!-- Content -->
-        <div id="content-area" class="flex-1 p-8 transition-all duration-300 ease-in-out pt-20 md:ml-20">
-            <div class="grid gap-4 grid-rows-6 md:grid-cols-2 lg:grid-cols-5">
-                <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
-                </div>
-                <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
-                </div>
-                <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
-                </div>
-                <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
-                </div>
-                <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
-                </div>
-                <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
-                </div>
-                <div class="h-40 rounded-lg bg-gray-200 shadow-inner flex items-center justify-center">
-                </div>
-            </div>
-        </div>
-        {{-- <div class="relative">
-            <div class="absolute right-0 bottom-0 w-80 h-64 bg-blue-700 rounded-tl-full"></div>
-        </div> --}}
+        @yield('body')
 
     </main>
 

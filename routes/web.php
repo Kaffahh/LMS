@@ -28,6 +28,7 @@ Route::middleware([ 'guest' ])->group(function () {
 Route::middleware([ 'auth' ])->group(function () {
     //Route home
     Route::get('/home', [ HomeController::class, 'home' ])->name('home');
+    Route::get('/guru', [ HomeController::class, 'guru' ])->name('guru');
     //Route email verification
     Route::get('/email/verify', [ EmailVerification::class, 'index' ])->middleware('emailVerifyAccess')->name('verification.notice');
     Route::get('/email/verify/{id}/{hash}', [ EmailVerification::class, 'verifemail' ])->middleware('signed')->name('verification.verify');
